@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.DS_Store
+
+# local secrets: vCenter password files and the real .env
+.env
+pw_*
+*.pem

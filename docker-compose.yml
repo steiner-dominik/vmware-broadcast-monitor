@@ -1,0 +1,17 @@
+services:
+  bcast-monitor:
+    image: ghcr.io/steiner-dominik/vmware-broadcast-monitor:latest
+    # Build locally instead of pulling: `docker compose build`
+    build: .
+    container_name: bcast-monitor
+    restart: unless-stopped
+    env_file: .env
+    # Uncomment to verify the vCenter certificate against your own CA (VMCA root etc.)
+    # and set VC_CA_FILE=/certs/ca.pem in .env
+    # volumes:
+    #   - ./ca.pem:/certs/ca.pem:ro
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

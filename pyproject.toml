@@ -1,0 +1,12 @@
+# Tool configuration only; the container installs requirements.txt.
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+# Line length is enforced by `ruff format`.
+ignore = ["E501"]
