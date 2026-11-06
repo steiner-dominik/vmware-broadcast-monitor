@@ -58,7 +58,7 @@ device key such as "4000") via pyVmomi, using a read-only account. No SSH to the
   `EXCLUDE_NETWORKS` are regexes.
 - CLI: `--once` prints the top-25 TX/RX table; `--test-notify` sends a test message.
 
-Files: `monitor.py` (all logic), `Dockerfile` (python:3.12-slim, non-root), `docker-compose.yml`,
+Files: `monitor.py` (all logic), `Dockerfile` (python:3.14-slim, non-root), `docker-compose.yml`,
 `.env.example` (all settings documented; comments on their own lines), `README.md`, `requirements.txt`.
 
 ## Status

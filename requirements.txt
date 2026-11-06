@@ -1,2 +1,2 @@
-pyvmomi>=8.0.1
-requests>=2.31
+pyvmomi>=9.1
+requests>=2.34

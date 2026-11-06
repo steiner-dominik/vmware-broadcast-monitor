@@ -31,7 +31,7 @@ import requests
 from pyVim.connect import Disconnect, SmartConnect
 from pyVmomi import vim, vmodl
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 log = logging.getLogger("bcast-monitor")
 
