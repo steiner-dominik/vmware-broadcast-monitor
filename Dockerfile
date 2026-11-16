@@ -1,4 +1,4 @@
-FROM python:3.14-slim
+FROM python:3.15-slim
 
 # Links the GHCR package to the repository (visibility, README, permissions).
 LABEL org.opencontainers.image.source="https://github.com/steiner-dominik/vmware-broadcast-monitor" \
